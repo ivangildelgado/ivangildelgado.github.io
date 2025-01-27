@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript">
+function mostrar(obra, obra2, obra3, obra4, obra5, obra6) {
+        var obra=document.getElementById(obra);
+		var obra2=document.getElementById(obra2);
+		var obra3=document.getElementById(obra3);
+		var obra4=document.getElementById(obra4);
+		var obra5=document.getElementById(obra5);
+		var obra6=document.getElementById(obra6);
+		obra2.style.display = "none";
+		obra3.style.display = "none";
+		obra4.style.display = "none";
+		obra5.style.display = "none";
+		obra6.style.display = "none";
+		obra.style.display = "block";
+}
+
+</script>
+    <style>
+        body {
+             background-color:Snow;
+             font-family:'Courier New', monospace;
+        }
+		
+        .nom {
+            margin-left: 100px;
+            padding-top: 1em;
+        }
+		
+        .sidenav {
+            height: 1000px;
+            width: 200px;
+			padding-left: 20px;
+			padding-top:20px;
+            position: absolute;
+        }
+		
+        .sidenav a {
+            color: red;
+            display: block; /* Make the links appear below each other */
+            padding: 10px;
+            text-decoration: none; /* Remove underline from links */
+        }
+		
+        .sidenav a:hover {
+            color: cyan;
+            background-color: #000000;
+        }
+		
+		.contenidor {
+            margin-left: 240px;
+			display: flex;
+        }
+		
+		.titols {
+            width: 400px;
+			padding-top:20px;
+        }
+		
+		.cont_obras {
+			padding-top: 20px;
+			padding-left: 25px;
+			flex-grow: 1;
+		}
+		
+		.cont_textos {
+			display:none;
+			padding-top: 10px;
+			padding-left: 25px;
+
+		}
+		
+		.textos {
+			width: 600px;
+			text-align: justify;
+			text-justify: inter-word;
+			display: inline-block;
+		}
+		
+		.foto {
+			display: inline-block;
+			margin-left: 30px;
+			padding-left: 10px;
+		}
+		
+		.titols tag2 {
+            color: black;
+            display: block; /* Make the links appear below each other */
+			padding: 5px;
+            text-decoration: none; /* Remove underline from links */
+        }
+		
+		.titols tag2:hover {
+            color: white;
+            background-color: red;
+        }
+
+    </style>
+    <title>Delgado | Inicio</title>
+</head>
+<body>
+    <div class="nom">
+        <img src="delgado.png" alt="Firma" style="width:15%;">
+    </div>
+    <div class="sidenav">
+        <a href="#">Inicio</a>
+        <a href="about.html">Sobre mí</a>
+    </div>
+    <div class="contenidor">
+		<div class="titols">
+			<tag2 href="javascript: void(0);" onClick="mostrar('q6', 'q5', 'q4', 'q3', 'q2', 'q1')"> El Camp</tag2>
+			<tag2 href="javascript: void(0);" onClick="mostrar('q5', 'q6', 'q4', 'q3', 'q2', 'q1')"> makeitreal®</tag2>
+			<tag2 href="javascript: void(0);" onClick="mostrar('q4', 'q6', 'q5', 'q3', 'q2', 'q1')"> Foxhole Radio</tag2>
+			<tag2 href="javascript: void(0);" onClick="mostrar('q3', 'q6', 'q5', 'q4', 'q2', 'q1')"> La Factoría de Narraciones Gráficas</tag2>
+			<tag2 href="javascript: void(0);" onClick="mostrar('q2', 'q6', 'q5', 'q4', 'q3', 'q1')"> ./anagrama.exe</tag2>
+			<tag2 href="javascript: void(0);" onClick="mostrar('q1', 'q6', 'q5', 'q4', 'q3', 'q2')"> Confiesat-e</tag2>
+		</div>
+		<div class="cont_obras">
+			<div class="cont_textos" id="q1">
+				<div class="textos">
+					Confiesat-e es un confesionario portátil, ¿qué mejor confidente que este terminal? Guarda con recelo tu secreto... En un 60%.
+					Las letras se cambian por otras aleatoriamente, modificando el 60% de la confesión.
+					<br><br>
+					Se crea una poesía dadaísta a partir de los secretos de los usuarios, funcionando a la vez como una suerte
+					de Test de Turing y cuestionando nuestras relaciones con la tecnología. ¿Qué serás capaz de contar? ¿Confias en la máquina? <br><br><br><br><br><br><br><br><br><br>
+				</div>
+				<div class="foto"><img src="confiesate.jpeg" alt="Pantalla de carga de Confiesat-e" width="500px"></div>
+			</div>
+			
+			<div class="cont_textos" id="q2">
+				<div class="textos">
+					El programa "./anagrama.exe" crea todos los anagramas posibles de una palabra dada. Para una palabra de 'n' letras, la cantidad 
+					de anagramas posibles es n!, que se generan de manera prácticamente automática cuando ejecutamos el programa en el ordenador. 
+					<br><br>
+					La acción <i>./anagrama.exe</i> consiste en seguir paso por paso las instrucciones del programa de manera manual con las palabras introducidas 
+					por el público. En las casi tres horas de ejecución, sólo llegué a realizar tres anagramas de la primera palabra.
+					<br><br>
+					Algunos anagramas: <a href="anagramas/candiru.html" target="_blank">Candirú</a> <a href="anagramas/ilusiones.html" target="_blank">Ilusiones</a> <a href="anagramas/manzana.html" target="_blank">Manzana</a> <a href="anagramas/nuvol.html" target="_blank">Núvol</a> <a href="anagramas/papaya.html" target="_blank">Papaya</a>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+				<div class="foto"><img src="anagrama.jpeg" alt="./anagrama.exe" width="500px"></div>
+			</div>
+			
+			<div class="cont_textos" id="q3">
+				<div class="textos">
+					<p><i>La Factoría de Narraciones Gráficas</i> explora el trabajo del artista como artesano y en colectivo, y utiliza el azulejo
+					catalán como marco para integrar tres estrategias planteadas por tres artistas. El público escoge la estrategia que
+					más le llama la atención para producir su azulejo, que se integra en un mosaico donde todos los azulejos són válidos.</p>
+					<p> El taller se celebró el 24 de octubre de 2021, durante el festival Barcelona Dibuixa en el espacio del Museo Picasso en
+					la plaza Jaume Sabartés</p>
+					<p> En colaboración con:</p>
+					<p style = "margin-left:1%"> <a href="https://www.instagram.com/ori.di.co/?hl=es" target="_blank">-Oriol Díaz</a> </p>
+					<p style = "margin-left:1%"> <a href="https://www.instagram.com/belendagartist/?hl=es" target="_blank">-Belén Domínguez</a> </p>
+					<br><br><br><br><br>
+				</div>
+				<div class="foto"><img src="factoria.jpeg" alt="Mural de la Factoría" width="500px"></div>
+			</div>
+				
+			<div class="cont_textos" id="q4">
+				<div class="textos">
+					Una radio de trinchera —o Foxhole Radio— es un sencillo dispositivo de recepción de radio. Fueron muy populares entre los soldados en el frente durante la II Guerra Mudial 
+					para recibir notícias, pues el uso de radios convencionales estaba prohibido. Quizá su elemento más curioso y característico sea la cuchilla de afeitar, que junto al grafito de un lápiz, 
+					hace la función de diodo. Ahora bien, el punto en el que la cuchilla y el lápiz hacen su función, debe encontrarse. Es por ello que el lápiz se va moviendo sobre la cuchilla, 
+					buscando el lugar, creando sobre ella el pequeño dibujo de un mapa, de un tortuoso camino hacia el contacto.
+					<br><br>
+					Este viaje encarna el interés central de <i>Foxhole Radio</i>. Es el intento desesperado de romper un estado de aislamiento y solipsismo, tratar de conectar con un mundo exterior. 
+					Las comunicaciones flotan en el aire, pero hay que buscarlas, y tratando de buscar un punto preciso, el movimiento sobre una pequeña cuchilla se convierte en una deriva en un 
+					mar enorme. En la búsqueda se captarán fragmentos, atisbos, y ruido. Sobretodo ruido. Es fácil fracasar y la frustración está garantizada. Pero se debe insistir con ahínco.
+				</div>
+				<div class="foto"><img src="foxhole.jpeg" alt="Cuchillas de Foxhole Radio" width="400px"></div>
+			</div>
+			
+			<div class="cont_textos" id="q5">
+				<div class="textos">
+					<i>makeitreal®</i> es una empresa dedicada a crear artistas de éxito. Han desarrollado una inteligencia artificial especialmente alimentada con todos los discursos institucionales
+					del panorama artístico catalán, de manera que es capaz de crear para cualquier obra un texto especialmente diseñado para catapultarte a la fama. Da igual cuál sea tu pieza, lo importante
+					es cómo se vende, por eso <i>makeitreal®</i> se asegura de incluir en la justificación de la obra todos los tags de moda para que la institución pueda frivolizar luchas reales subiéndose al carro 
+					de distintos frentes sociales que puede banalizar entre sus muros.
+					<br><br>
+					En colaboración con Ana Ventura.
+					<br><br>
+					<a href="https://www.makeitrealx.wordpress.com" target="_blank">makeitreal®</a>
+					<br><br><br><br><br><br><br>
+				</div>
+				<div class="foto"><img src="makeitreal.jpg" alt="Web de makeitreal®" width="500px"></div>
+			</div>
+			
+			<div class="cont_textos" id="q6">
+				<div class="textos">
+					<i>El Camp</i> es un proyecto sobre memoria en un escenario clave de la Guerra Civil. Una serie de soldados esparcidos por el paisaje representados por su arma —una imagen del fusil Mauser— desaparecen paulatinamente, fundiéndose a blanco, y dejando sólo sus fantasmas como recuerdo de lo ocurrido. Es un proyecto de cultivo a la inversa. Empieza plantando frutos que irán desapareciendo hasta volverse la nada. Una nada que no es verdaderamente nada, porque nada puede ser nada, y siempre queda una algo de lo que algo fue.
+					<br><br>
+					<i>El Camp</i> —de cultivo/de batalla— es un acto de violencia. Una agresión hacia el suelo. Violación del territorio para introducir a la fuerza piezas en la tierra que resignifican lo que la tierra había sido. Ahora es un campo, y lo será por mucho tiempo. Pero la imagen se va borrando con el tiempo, hasta que solo queda un espectro, un estandarte tétrico, bandera blanca e incertidumbre sobre lo ocurrido. Pero el fantasma sigue allí apostado.
+				</div>
+				<div class="textos" style="text-align:right">En proceso</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
